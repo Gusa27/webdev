@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <form action="/save" method="post">
+        <h1>Please, answer the questions below</h1>
+        <label for="username">username:</label>
+        <input id="username" type="text" name="username" placeholder="exampleuser">
+        <br>
+        <p>question1:</p>
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="question1" value="yes" required>
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="question1" value="no">
+        <br>
+        <br>
+        <p>question2:</p>  
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="question2" value="yes" required>
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="question2" value="no">
+        <br>
+        <br>
+        <p>question3:</p>  
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="question3" value="yes" required>
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="question3" value="no">
+        <br> 
+        <br>
+        <input type="submit" name="" value="Submit">
+    </form>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <form action="/" method="get">
+        <input type="submit" name="" value="Go to Main Page">
+    </form>
+</body>
+</html>
